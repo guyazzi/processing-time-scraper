@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:/testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+axon:
+  serializer:
+    general: jackson
+
+mail-service:
+  from:
+  to:
+  cc:
+  subject:
+
+selenium-service:
+  webdriver:
+    name: webdriver.chrome.driver
+    location: chromedriver.exe
+  website:
+    url:
+    fields:
+      ddl1:
+        name:
+        value:
+      ddl2:
+        name:
+        value:
+      ddl3:
+        name:
+        value:
+      btn1:
+        class:
+        text:
+      result1:
+        id:
+        default:
+      result2:
+        id:
+        default:
+
